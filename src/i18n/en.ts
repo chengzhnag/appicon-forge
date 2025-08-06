@@ -7,6 +7,7 @@ export const en = {
     'download settings': 'Download Settings',
     'export data': 'Export Presets',
     'go to collection': 'Collection',
+    'icon name': 'Name',
     'icon settings': 'Icon Settings',
     'icon shadow settings': 'Icon Shadow Settings',
     'import and export': 'Preset Import and Export',
@@ -59,6 +60,7 @@ export const en = {
       icon: {
         color: 'Color',
         offset: 'Offset',
+        perspective: 'Perspective',
         rotation: 'Rotation',
         size: 'Size',
       },
@@ -72,6 +74,7 @@ export const en = {
       text: {
         italic: 'Italic',
         offset: 'Offset',
+        perspective: 'Perspective',
         rotation: 'Rotation',
         size: 'Size',
         weight: 'Weight',
@@ -80,8 +83,20 @@ export const en = {
           text: 'Colors',
         },
         font: {
+          invalid: 'Invalid Font',
           placeholder: 'Select Font',
+          search: 'Search Font...',
           text: 'Font',
+          add: {
+            error: 'Failed to add font, please try again (e.g. "Bebas Neue")',
+            success: 'Font added successfully',
+            text: 'Add from Google Fonts',
+          },
+        },
+        stroke: {
+          color: 'Stroke Color',
+          text: 'Stroke',
+          width: 'Stroke Width',
         },
         value: {
           placeholder: 'Enter Text...',

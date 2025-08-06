@@ -66,6 +66,10 @@ export const PreviewDialog = () => {
             <IconCard ref={iconCardRef} inPreview icon={previewIcon} />
             <div className='flex flex-col gap-2'>
               <p className='flex items-center gap-4'>
+                <span className='flex-1'>{t('icon name')}</span>
+                {previewIcon.iconName}
+              </p>
+              <p className='flex items-center gap-4'>
                 <span className='flex-1'>{t('collections.author')}</span>
                 <a
                   className='underline'

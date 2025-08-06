@@ -1,6 +1,8 @@
 # AppIcon Forge
 
-An intuitive app icon generator that lets you customize colors, borders, gradient, shadows, text, local images and more to create unique app icons effortlessly.
+Language: [简体中文](./README_zh-CN.md)
+
+A simple tool that allows you to generate usable app icons without any design expertise.
 
 ## Example
 
@@ -8,18 +10,21 @@ An intuitive app icon generator that lets you customize colors, borders, gradien
 ![example2](./screenshots/1-2.png)
 ![example3](./screenshots/1-3.png)
 ![example4](./screenshots/1-4.png)
+![example5](./screenshots/1-5.png)
 
 ## Features
 
-- Customize icon size, position, color, background color, border, gradient, and shadow
-- Customize text content and text gradient
-- Customize local SVG files or images
+- Customize icon size, position, color, background color, border, gradient, and shadow.
+- Customize text content, text gradient, and fonts.
+- Customize local SVG files or images.
 - Generate icons using [Iconify Icons](https://iconify.design/) with over 200,000 available icons.
 - Real-time preview of your icon changes.
 - Easy export of icons for apps.
 
 > [!IMPORTANT]
 > The text icons use the system's default fonts, and copyright compliance cannot be guaranteed. Please proceed with caution when making your selection.
+>
+> You can use custom Google fonts to avoid this.
 
 ## Usage
 
@@ -52,6 +57,8 @@ Visit `http://localhost:5173/appicon-forge/` in your browser to start using AppI
 
 ## Deployment
 
+### Manual
+
 To build the project for production:
 
 ```sh
@@ -59,6 +66,44 @@ pnpm build
 ```
 
 Deploy the contents of the `out` folder to your web server or GitHub Pages.
+
+### Docker
+
+```console
+# Clone the repository
+git clone https://github.com/zhangyu1818/appicon-forge.git
+
+# Navigate to the directory
+cd appicon-forge
+
+# Build the image
+docker build -t appicon-forge .
+
+
+# Renive the image
+docker rmi appicon-forge
+```
+
+#### Docker run
+
+```console
+# Build and start the container
+docker run -d --name=appicon-forge --restart=always -p 5173:80 appicon-forge
+
+# Stop and remove the container
+docker stop appicon-forge
+docker rm appicon-forge
+```
+
+#### Docker compose
+
+```console
+# Build and start the container
+docker-compose up -d
+
+# Stop and remove the container
+docker-compose down
+```
 
 ## License
 

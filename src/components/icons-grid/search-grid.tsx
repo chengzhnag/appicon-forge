@@ -25,9 +25,10 @@ export const SearchGrid = ({ searchQuery }: SearchGridProps) => {
       error={isError}
       loading={isLoading}
       renderItem={(iconName) => {
-        const [prefix] = iconName.split(':')
+        const [prefix, name] = iconName.split(':')
         const icon = {
           name: iconName,
+          iconName: name,
           collection: {
             prefix,
             ...collections?.[prefix],

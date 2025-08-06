@@ -95,6 +95,7 @@ export const CollectionGrid = () => {
         renderItem={(iconName) => {
           const icon = {
             name: `${prefix}:${iconName}`,
+            iconName,
             collection: {
               prefix,
               ...info,

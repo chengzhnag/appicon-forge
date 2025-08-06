@@ -1,8 +1,9 @@
 import { useTranslation } from 'react-i18next'
 
-import { ColorPicker } from '@/components/ui/color-picker'
-import { SettingsContainer, StyleFieldSubgrid } from '@/components/ui/styled'
+import { SettingsContainer } from '@/components/ui/styled'
 
+import { ColorField } from '../common/color-field'
+import { PerspectiveField } from '../common/perspective-field'
 import { PointField } from '../common/point-field'
 import { SliderField } from '../common/slider-field'
 
@@ -21,14 +22,12 @@ export const IconSettings = () => {
         max={360}
         path='iconRotation'
       />
+      <PerspectiveField
+        label={t('settings.icon.perspective')}
+        path='iconPerspective'
+      />
       <PointField label={t('settings.icon.offset')} path='iconOffset' />
-      <StyleFieldSubgrid
-        label={t('settings.icon.color')}
-        normalizeValueFromEvent={(event) => `${event}`}
-        path='iconColor'
-      >
-        <ColorPicker />
-      </StyleFieldSubgrid>
+      <ColorField label={t('settings.icon.color')} path='iconColor' />
     </SettingsContainer>
   )
 }

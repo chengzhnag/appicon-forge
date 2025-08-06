@@ -7,6 +7,7 @@ export const zh = {
     'download settings': '下载设置',
     'export data': '导出预设',
     'go to collection': '集合',
+    'icon name': '名称',
     'icon settings': '图标设置',
     'icon shadow settings': '图标阴影设置',
     'import and export': '预设导入与导出',
@@ -59,6 +60,7 @@ export const zh = {
       icon: {
         color: '颜色',
         offset: '偏移量',
+        perspective: '透视',
         rotation: '旋转',
         size: '大小',
       },
@@ -72,6 +74,7 @@ export const zh = {
       text: {
         italic: '斜体',
         offset: '偏移量',
+        perspective: '透视',
         rotation: '旋转',
         size: '大小',
         weight: '粗细',
@@ -80,8 +83,20 @@ export const zh = {
           text: '颜色组',
         },
         font: {
+          invalid: '无效字体',
           placeholder: '选择字体',
+          search: '搜索字体...',
           text: '字体',
+          add: {
+            error: '添加字体失败, 请重试 (例如 "Bebas Neue")',
+            success: '字体添加成功',
+            text: '从 Google Fonts 添加',
+          },
+        },
+        stroke: {
+          color: '描边颜色',
+          text: '描边',
+          width: '描边宽度',
         },
         value: {
           placeholder: '输入文字...',
